@@ -13,10 +13,10 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-
-
-
+X1=X*theta; %X is xby2 matrix, theta is 2by1 matrix
+J=sum(((X1-y).^2))/(m*2);
 
 % =========================================================================
 
 end
+    

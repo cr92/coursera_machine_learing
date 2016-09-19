@@ -16,12 +16,10 @@ for iter = 1:num_iters
     % Hint: While debugging, it can be useful to print out the values
     %       of the cost function (computeCost) and gradient here.
     %
-
-
-
-
-
-
+    
+    X1=X*theta; %X is xby2 matrix, theta is 2by1 matrix
+    theta(1,1)=theta(1,1)-sum(((X1-y).*X(:,1)))/(m/alpha);
+    theta(2,1)=theta(2,1)-sum(((X1-y).*X(:,2)))/(m/alpha);
 
     % ============================================================
 
