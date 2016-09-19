@@ -1,1 +1,1 @@
-# coursera_machine_learing
+# coursera_machine_learning
