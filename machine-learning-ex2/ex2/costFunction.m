@@ -20,12 +20,20 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
+thetax=X*theta;
+gthetax=sigmoid(thetax);
+eachcost=0-(y.*log(gthetax) + (1-y).*log(1-gthetax));
+cost=(sum(eachcost))/m;
+J=cost;
+
+theta1=(gthetax-y).*X(:,1);
+theta2=(gthetax-y).*X(:,2);
+theta3=(gthetax-y).*X(:,3);
 
 
-
-
-
-
+grad(1,1)=(sum(theta1))/m
+grad(2,1)=(sum(theta2))/m
+grad(3,1)=(sum(theta3))/m
 
 % =============================================================
 

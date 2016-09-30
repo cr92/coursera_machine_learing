@@ -16,7 +16,8 @@ p = zeros(m, 1);
 %
 
 
-
+temp_p=sigmoid(X*theta);
+p=floor(2*temp_p)
 
 
 
