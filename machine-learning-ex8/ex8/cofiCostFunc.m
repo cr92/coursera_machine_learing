@@ -44,7 +44,13 @@ Theta_grad = zeros(size(Theta));
 
 
 
-
+params
+Y
+R
+num_users
+num_movies
+num_features
+lambda
 
 
 
